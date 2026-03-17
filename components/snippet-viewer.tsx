@@ -130,7 +130,7 @@ export function SnippetViewer({
             className="gap-2"
           >
             <Copy className="w-4 h-4" />
-            {copiedLink ? 'Copied!' : 'Copy Text'}
+            {copiedText ? 'Copied!' : 'Copy Text'}
           </Button>
         </div>
 
