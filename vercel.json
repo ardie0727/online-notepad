@@ -1,7 +1,7 @@
 {
-
+  "deploymentProtection": {
     "preview": {
       "access": "public"
-    
+    }
   }
 }
