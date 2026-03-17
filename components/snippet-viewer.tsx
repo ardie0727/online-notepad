@@ -21,6 +21,7 @@ export function SnippetViewer({
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [copiedLink, setCopiedLink] = useState(false);
+  const [copiedText,setCopiedText] = useState(false);
 
   useEffect(() => {
     const fetchSnippet = async () => {
@@ -55,8 +56,8 @@ export function SnippetViewer({
     if (!snippet) return;
     const url = snippet.content;
     await navigator.clipboard.writeText(url);
-    setCopiedLink(true);
-    setTimeout(() => setCopiedLink(false), 2000);
+    setCopiedText(true);
+    setTimeout(() => setCopiedText(false), 2000);
   };
 
   const handleDownload = () => {
