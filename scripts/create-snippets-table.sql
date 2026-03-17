@@ -1,6 +1,6 @@
 -- Create snippets table for the notepad app
 CREATE TABLE IF NOT EXISTS snippets (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   content TEXT NOT NULL,
   file_type VARCHAR(50) NOT NULL DEFAULT 'txt',
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
