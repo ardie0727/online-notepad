@@ -26,6 +26,7 @@ const FILE_TYPES = [
   { value: 'json', label: 'JSON' },
   { value: 'xml', label: 'XML' },
   { value: 'md', label: 'Markdown' },
+  { value: 'csv',label: 'CSV'}
 ];
 
 export function CreateSnippetForm() {
